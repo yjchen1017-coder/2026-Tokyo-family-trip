@@ -1,0 +1,457 @@
+<!-- 注意：為了讓 GitHub Pages 正常運作，此檔案名稱必須是 "index.html" (全小寫)，且必須放在 Repository 的根目錄中 -->
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 新春東京箱根家族旅</title>
+    <meta name="description" content="2025農曆春節東京箱根孝親之旅詳細行程表">
+    
+    <!-- 引入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 引入 FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'onsen-gold': '#C5A059',
+                        'onsen-dark': '#2C3E50',
+                        'festive-red': '#C0392B',
+                        'soft-bg': '#F9F7F2',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .hero-pattern {
+            background-color: #2C3E50;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 24px;
+            width: 2px;
+            background: #e5e7eb;
+            z-index: 0;
+        }
+        /* 隱藏滾動條但保持功能 */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-soft-bg text-gray-700 font-sans antialiased">
+
+    <!-- 導航列 -->
+    <nav class="fixed top-0 w-full z-50 glass-effect shadow-md transition-all duration-300">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16 overflow-x-auto no-scrollbar">
+                <span class="font-serif font-bold text-onsen-dark text-lg flex-shrink-0 mr-4">
+                    <i class="fas fa-torii-gate text-festive-red mr-2"></i>家族旅 2025
+                </span>
+                <div class="flex space-x-2 text-sm font-medium whitespace-nowrap">
+                    <a href="#day1" class="px-3 py-1.5 rounded-full hover:bg-onsen-gold hover:text-white transition text-gray-600">Day 1</a>
+                    <a href="#day2" class="px-3 py-1.5 rounded-full hover:bg-onsen-gold hover:text-white transition text-gray-600">Day 2</a>
+                    <a href="#day3" class="px-3 py-1.5 rounded-full hover:bg-onsen-gold hover:text-white transition text-gray-600">Day 3</a>
+                    <a href="#day4" class="px-3 py-1.5 rounded-full hover:bg-onsen-gold hover:text-white transition text-gray-600">Day 4</a>
+                    <a href="#day5" class="px-3 py-1.5 rounded-full hover:bg-onsen-gold hover:text-white transition text-gray-600">Day 5</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="relative z-10 text-white max-w-3xl">
+            <div class="inline-block bg-festive-red/90 text-white px-6 py-2 rounded-full text-sm font-bold tracking-widest mb-6 shadow-lg backdrop-blur-sm border border-white/20">
+                農曆春節・孝親之旅
+            </div>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight drop-shadow-lg">
+                東京・箱根<br>溫泉慢活時光
+            </h1>
+            <p class="text-lg md:text-xl opacity-90 font-light mb-10 drop-shadow-md">
+                三代同堂的幸福旅程<br>
+                <span class="text-onsen-gold font-medium mt-2 block text-2xl">2025.02.13 - 02.17</span>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#strategy" class="btn-hover bg-white text-onsen-dark px-8 py-3 rounded-full font-bold shadow-lg">
+                    查看行李策略
+                </a>
+                <a href="#day1" class="btn-hover bg-onsen-gold/90 text-white px-8 py-3 rounded-full font-bold shadow-lg backdrop-blur-sm">
+                    開始行程
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-4 py-12">
+
+        <!-- 重要策略區塊 -->
+        <section id="strategy" class="mb-20 scroll-mt-24">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-l-8 border-emerald-500 transform hover:scale-[1.01] transition-transform duration-300">
+                <div class="p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center border-b pb-4">
+                        <i class="fas fa-shipping-fast text-emerald-500 mr-3 text-3xl"></i>
+                        最重要的「行李策略」
+                    </h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+                        為了讓8位成員移動舒適，且箱根山路不便拖行大行李，我們採取<strong>「行李分離術」</strong>：
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                            <h3 class="font-bold text-emerald-800 mb-3 text-lg flex items-center">
+                                <span class="bg-emerald-200 w-8 h-8 rounded-full flex items-center justify-center mr-2 text-emerald-700">1</span>
+                                大行李（黑貓宅急便）
+                            </h3>
+                            <p class="text-gray-700">在Day 1 機場直接寄出，指定 <strong>2/15 (Day 3)</strong> 送達東京飯店。省去搬運困擾！</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                            <h3 class="font-bold text-blue-800 mb-3 text-lg flex items-center">
+                                <span class="bg-blue-200 w-8 h-8 rounded-full flex items-center justify-center mr-2 text-blue-700">2</span>
+                                隨身輕裝（箱根用）
+                            </h3>
+                            <p class="text-gray-700">每人攜帶一個<strong>軟式旅行袋或登機箱</strong>，裝2晚衣物上包車去箱根。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 1 -->
+        <section id="day1" class="mb-16 scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <div class="bg-onsen-dark text-white font-bold text-xl w-16 h-16 rounded-2xl flex flex-col items-center justify-center shadow-lg z-10">
+                    <span class="text-xs opacity-75">FEB</span>
+                    <span>13</span>
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-3xl font-bold text-gray-800">抵達東京 & 直奔溫泉</h2>
+                    <p class="text-onsen-gold font-medium mt-1"><i class="fas fa-map-marker-alt mr-1"></i> 機場 ➔ 箱根仙石原</p>
+                </div>
+            </div>
+
+            <div class="relative timeline-line pl-2">
+                <!-- Event -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-gray-300 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-gray-400 block mb-1">下午</span>
+                    <h3 class="text-lg font-bold text-gray-800">抵達機場 & 寄送行李</h3>
+                    <p class="text-gray-600">處理完宅急便手續後，與包車司機會合。</p>
+                </div>
+
+                <!-- Event: Hotel Highlight -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-festive-red rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-festive-red block mb-1">18:00 入住</span>
+                    
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 group">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/345591942.jpg?k=23a6c117d60551061f22e77b60570b54f4949514e8c67919313045862359487c&o=&hp=1" alt="Centurion Hakone Bettei" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent p-4 w-full">
+                                <h3 class="text-xl font-serif font-bold text-white">Centurion Hakone Bettei</h3>
+                                <p class="text-white/80 text-sm">仙石原溫泉・客房半露天風呂</p>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <p class="text-gray-700 mb-4">爸爸精選的飯店！最棒的是<strong>客房內附設半露天溫泉</strong>，長輩不用擔心大浴場地板濕滑，在房間就能安心享受好湯。全館僅少數客房，隱私性極佳。</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded"><i class="fas fa-utensils mr-1"></i>一泊二食</span>
+                                <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded"><i class="fas fa-wifi mr-1"></i>免費WiFi</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://www.booking.com/hotel/jp/centurion-hakone-bettei.zh-tw.html" target="_blank" class="flex-1 bg-blue-600 text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition">
+                                    <i class="fas fa-info-circle mr-1"></i> 房型/設施詳情
+                                </a>
+                                <a href="https://maps.app.goo.gl/3Qx5zXj7wZ5wZ5wZ5" target="_blank" class="flex-none bg-gray-100 text-gray-600 px-4 py-2 rounded-lg hover:bg-gray-200 transition">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 2 -->
+        <section id="day2" class="mb-16 scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <div class="bg-onsen-dark text-white font-bold text-xl w-16 h-16 rounded-2xl flex flex-col items-center justify-center shadow-lg z-10">
+                    <span class="text-xs opacity-75">FEB</span>
+                    <span>14</span>
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-3xl font-bold text-gray-800">箱根藝術與湖景</h2>
+                    <p class="text-onsen-gold font-medium mt-1"><i class="fas fa-camera mr-1"></i> 玻璃之森 ➔ 蘆之湖 ➔ 大涌谷</p>
+                </div>
+            </div>
+
+            <div class="relative timeline-line pl-2">
+                <!-- 玻璃之森 -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-gray-300 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-gray-400 block mb-1">10:00</span>
+                    <div class="bg-white rounded-xl shadow p-4 border border-gray-100">
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <img src="https://images.unsplash.com/photo-1549643276-fbc2bd525904?q=80&w=400&auto=format&fit=crop" alt="箱根玻璃之森" class="w-full sm:w-1/3 h-32 object-cover rounded-lg">
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-gray-800">箱根玻璃之森美術館</h3>
+                                <p class="text-sm text-gray-600 mb-3">距離飯店僅5分鐘。庭園平坦好走，有閃亮的玻璃樹，室內有暖氣。適合長輩慢遊。</p>
+                                <a href="https://www.hakone-garasunomori.jp/" target="_blank" class="inline-flex items-center text-onsen-gold font-bold text-sm hover:underline">
+                                    <i class="fas fa-globe mr-1"></i> 官方網站 (營業時間/門票)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 海賊船 -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-onsen-gold rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-onsen-gold block mb-1">14:00</span>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1576675466969-38ee047b663a?q=80&w=800&auto=format&fit=crop" alt="蘆之湖海賊船" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold text-gray-800 flex justify-between">
+                                蘆之湖海賊船 / 大涌谷
+                                <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded-full h-fit">天氣備案：Pola美術館</span>
+                            </h3>
+                            <p class="text-gray-600 text-sm mt-2 mb-4">搭船看水中鳥居與富士山，接著搭纜車上大涌谷看火山地熱。</p>
+                            
+                            <div class="bg-red-50 text-red-800 text-sm p-3 rounded-lg border border-red-100 mb-4">
+                                <i class="fas fa-snowflake mr-1"></i> <strong>長輩保暖提醒：</strong> 大涌谷風大且地勢高，務必戴帽子圍巾。
+                            </div>
+
+                            <div class="flex gap-2">
+                                <a href="https://www.hakone-kankosen.co.jp/foreign/ch/" target="_blank" class="flex-1 bg-onsen-dark text-white text-center py-2 rounded text-sm hover:bg-gray-800 transition">
+                                    <i class="fas fa-ship mr-1"></i> 海賊船時刻表
+                                </a>
+                                <a href="https://www.hakoneropeway.co.jp/foreign/chi/" target="_blank" class="flex-1 bg-gray-200 text-gray-700 text-center py-2 rounded text-sm hover:bg-gray-300 transition">
+                                    <i class="fas fa-mountain mr-1"></i> 纜車運行狀況
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 3 -->
+        <section id="day3" class="mb-16 scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <div class="bg-onsen-dark text-white font-bold text-xl w-16 h-16 rounded-2xl flex flex-col items-center justify-center shadow-lg z-10">
+                    <span class="text-xs opacity-75">FEB</span>
+                    <span>15</span>
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-3xl font-bold text-gray-800">移動日：富士山與東京</h2>
+                    <p class="text-onsen-gold font-medium mt-1">退房 ➔ 御殿場/小田原 ➔ 銀座</p>
+                </div>
+            </div>
+
+            <div class="relative timeline-line pl-2">
+                <!-- 中途景點 -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-gray-300 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-gray-400 block mb-1">11:00 (二選一)</span>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <!-- 選項A: Outlets -->
+                        <div class="bg-white rounded-lg shadow p-4 border border-gray-100 hover:shadow-md transition">
+                            <h4 class="font-bold text-gray-800 mb-2">🛍️ 御殿場 Premium Outlets</h4>
+                            <p class="text-xs text-gray-600 mb-3">看富士山最美，無障礙設施佳。</p>
+                            <a href="https://www.premiumoutlets.co.jp/cht/gotemba/" target="_blank" class="text-onsen-gold text-xs font-bold hover:underline">
+                                查看官網 & 地圖
+                            </a>
+                        </div>
+                        <!-- 選項B: 小田原城 -->
+                        <div class="bg-white rounded-lg shadow p-4 border border-gray-100 hover:shadow-md transition">
+                            <h4 class="font-bold text-gray-800 mb-2">🏯 小田原城 & Minaka</h4>
+                            <p class="text-xs text-gray-600 mb-3">江戶風情街，海鮮午餐方便。</p>
+                            <a href="https://odawaracastle.com/" target="_blank" class="text-onsen-gold text-xs font-bold hover:underline">
+                                小田原城官網
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 東京 Check-in -->
+                <div class="relative pl-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-emerald-500 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-emerald-600 block mb-1">17:00</span>
+                    <h3 class="text-lg font-bold text-gray-800">東京飯店 Check-in</h3>
+                    <div class="bg-emerald-50 text-emerald-800 text-sm p-3 rounded-lg inline-block border border-emerald-100 mt-2">
+                        <i class="fas fa-check-circle mr-1"></i> <strong>行李已送達！</strong> 第一天寄的大行李已經在飯店等大家囉！
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 4 -->
+        <section id="day4" class="mb-16 scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <div class="bg-onsen-dark text-white font-bold text-xl w-16 h-16 rounded-2xl flex flex-col items-center justify-center shadow-lg z-10">
+                    <span class="text-xs opacity-75">FEB</span>
+                    <span>16</span>
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-3xl font-bold text-gray-800">東京下町風情</h2>
+                    <p class="text-onsen-gold font-medium mt-1">淺草(人力車) ➔ 鰻魚飯 ➔ 銀座</p>
+                </div>
+            </div>
+
+            <div class="relative timeline-line pl-2">
+                <!-- 淺草人力車 -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-onsen-gold rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-onsen-gold block mb-1">10:00</span>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="flex flex-col sm:flex-row">
+                            <div class="sm:w-1/3 h-48 sm:h-auto relative">
+                                <img src="https://images.unsplash.com/photo-1583921355416-5bc515d9a997?q=80&w=600&auto=format&fit=crop" alt="淺草雷門" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 sm:w-2/3">
+                                <h3 class="text-lg font-bold text-gray-800">淺草寺 & 人力車體驗</h3>
+                                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 my-3">
+                                    <h4 class="font-bold text-yellow-800 text-sm mb-1"><i class="fas fa-wheelchair mr-1"></i> 孝親特別安排</h4>
+                                    <p class="text-xs text-yellow-700">預約2台人力車給長輩，讓他們「坐著」遊覽淺草巷弄與雷門，不用人擠人走路。</p>
+                                </div>
+                                <a href="https://jidaiya.biz/" target="_blank" class="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-700 transition">
+                                    <i class="fas fa-external-link-alt mr-2"></i> 淺草時代屋 (人力車資訊)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 銀座步行者天國 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-gray-300 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-gray-400 block mb-1">14:30</span>
+                    <h3 class="text-lg font-bold text-gray-800">銀座 步行者天國</h3>
+                    <p class="text-gray-600 mt-1 mb-2">週日限定封街。長輩可安排在 Ginza Six 或三越的咖啡廳休息。</p>
+                    <a href="https://ginza6.tokyo/" target="_blank" class="text-gray-500 text-xs hover:text-gray-800 underline mr-4">GINZA SIX 官網</a>
+                    <a href="https://www.mistore.jp/store/ginza.html" target="_blank" class="text-gray-500 text-xs hover:text-gray-800 underline">銀座三越 官網</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 5 (Fixed Missing Section) -->
+        <section id="day5" class="mb-16 scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <div class="bg-onsen-dark text-white font-bold text-xl w-16 h-16 rounded-2xl flex flex-col items-center justify-center shadow-lg z-10">
+                    <span class="text-xs opacity-75">FEB</span>
+                    <span>17</span>
+                </div>
+                <div class="ml-4">
+                    <h2 class="text-3xl font-bold text-gray-800">最後採買 & 返家</h2>
+                    <p class="text-onsen-gold font-medium mt-1">百貨地下街 ➔ 機場</p>
+                </div>
+            </div>
+
+            <div class="relative timeline-line pl-2">
+                <!-- 採買 -->
+                <div class="relative pl-12 pb-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-gray-300 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-gray-400 block mb-1">上午</span>
+                    <h3 class="text-lg font-bold text-gray-800">輕鬆採買伴手禮</h3>
+                    <p class="text-gray-600 mt-1 mb-2">建議前往「銀座三越」或「日本橋三越」的地下食品街，環境舒適且選擇多。</p>
+                    <a href="https://www.mistore.jp/store/ginza.html" target="_blank" class="inline-flex items-center text-onsen-gold font-bold text-sm hover:underline">
+                        <i class="fas fa-shopping-bag mr-1"></i> 銀座三越 伴手禮資訊
+                    </a>
+                </div>
+
+                <!-- 機場 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-4 top-2 w-4 h-4 bg-gray-300 rounded-full border-4 border-soft-bg z-10"></div>
+                    <span class="text-sm font-bold text-gray-400 block mb-1">下午</span>
+                    <h3 class="text-lg font-bold text-gray-800">包車前往機場</h3>
+                    <p class="text-gray-600">帶著滿滿的回憶與戰利品，準備登機返家。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-onsen-dark text-white py-12 mt-12 rounded-t-3xl">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h3 class="text-2xl font-serif font-bold mb-8">行前貼心小叮嚀</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-left mb-10">
+                    <div class="bg-white/10 p-5 rounded-xl border border-white/5">
+                        <i class="fas fa-mitten text-onsen-gold mb-3 text-2xl"></i>
+                        <h4 class="font-bold mb-2">保暖防滑</h4>
+                        <p class="text-sm text-gray-300">箱根2月可能積雪，請務必幫長輩準備防滑靴（或防滑貼片）、手套及暖暖包。</p>
+                    </div>
+                    <div class="bg-white/10 p-5 rounded-xl border border-white/5">
+                        <i class="fas fa-utensils text-onsen-gold mb-3 text-2xl"></i>
+                        <h4 class="font-bold mb-2">餐廳預約</h4>
+                        <p class="text-sm text-gray-300">8人大桌難求，確認好想吃的餐廳後，請盡早訂位 (建議透過 Google Maps 或 Tabely)。</p>
+                    </div>
+                    <div class="bg-white/10 p-5 rounded-xl border border-white/5">
+                        <i class="fas fa-passport text-onsen-gold mb-3 text-2xl"></i>
+                        <h4 class="font-bold mb-2">重要文件</h4>
+                        <p class="text-sm text-gray-300">請將 Visit Japan Web 截圖存手機，並隨身攜帶護照以便購物退稅。</p>
+                    </div>
+                </div>
+                <div class="border-t border-white/20 pt-8">
+                    <p class="opacity-60 text-sm">Created with ❤️ for the family trip.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // 平滑滾動效果 - Fixed error handling for missing elements
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else {
+                    console.warn(`Target element ${targetId} not found.`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
